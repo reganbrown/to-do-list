@@ -8,6 +8,7 @@ export default function Input({ push }) {
   return (
     <>
       <form
+        className="toDoForm"
         onSubmit={(event) => {
           submitHandler(event);
         }}
