@@ -1,9 +1,9 @@
 import "./Input.scss";
 
-export default function Input() {
+export default function Input({ push }) {
   function submitHandler(event) {
     event.preventDefault();
-    event.target;
+    push(event.target.todo.value);
   }
   return (
     <>
@@ -12,8 +12,13 @@ export default function Input() {
           submitHandler(event);
         }}
       >
-        <input type="text" className="addToDo" placeholder="to do..."></input>
-        <button class="button">add</button>
+        <input
+          type="text"
+          className="addToDo"
+          name="todo"
+          placeholder="to do..."
+        ></input>
+        <button className="button">add</button>
       </form>
     </>
   );

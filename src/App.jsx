@@ -6,10 +6,16 @@ import Input from "./components/Input/Input";
 
 function App() {
   const ItemsToDo = ["Buy stuff", "Return stuff"];
+
+  function updateList(item) {
+    console.log(item);
+    ItemsToDo.push(item);
+    console.log(ItemsToDo);
+  }
   return (
     <>
       <Header />
-      <Input />
+      <Input push={updateList} />
       <List ItemList={ItemsToDo} />
     </>
   );
