@@ -1,0 +1,10 @@
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 40rem;
+  background-color: white;
+  list-style-type: none;
+  font-size: 20px;
+  border-radius: 10px;
+}
