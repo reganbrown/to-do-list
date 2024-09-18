@@ -3,6 +3,7 @@ import "./Input.scss";
 export default function Input() {
   function submitHandler(event) {
     event.preventDefault();
+    event.target;
   }
   return (
     <>

@@ -5,11 +5,12 @@ import List from "./components/List/List";
 import Input from "./components/Input/Input";
 
 function App() {
+  const ItemsToDo = ["Buy stuff", "Return stuff"];
   return (
     <>
       <Header />
       <Input />
-      <List />
+      <List ItemList={ItemsToDo} />
     </>
   );
 }

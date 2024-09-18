@@ -1,9 +1,12 @@
 .new {
-  color: black;
+  color: #967259;
   padding-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .done {
-  color: grey;
+  color: #dbc1ac;
   order: 1;
+  cursor: pointer;
 }
