@@ -4,6 +4,7 @@ export default function Input({ push }) {
   function submitHandler(event) {
     event.preventDefault();
     push(event.target.todo.value);
+    event.target.todo.value = "";
   }
   return (
     <>

@@ -15,8 +15,8 @@ function App() {
   return (
     <>
       <Header />
-      <Input push={updateList} />
       <List ItemList={ItemsToDo} />
+      <Input push={updateList} />
     </>
   );
 }
