@@ -14,6 +14,7 @@ export default function Input({ push }) {
           className="addToDo"
           name="todo"
           placeholder="to do..."
+          required
         ></input>
         <button className="button">add</button>
       </form>
